@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOGO Offer</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<section class="container">
+    <header>
+        <h1>YAY! It's BOGO</h1>
+    </header>
+
+    <article class="offer-box">
+        <div class="div-left">
+            <input type="radio" name="unit" id="unit1" value="1" onclick="calculateTotal(1)" checked>
+        <label for="unit1">
+            <span class="offer-title" >1 Unit <span class="discount">10% Off</span></span>
+        </div>
+            <span class="price">$10.00 USD <del>$24.00 USD</del></span>
+        </label>
+    </article>
+
+    <article class="offer-box">
+       <div class="div-left">
+        <input type="radio" name="unit" id="unit2" value="2" onclick="calculateTotal(2)">
+        <label for="unit2">
+            <span class="offer-title">2 Unit <span class="discount">20% Off</span></span>
+       </div>
+            <span class="price">$18.00 USD <del>$24.00 USD</del></span>
+            <span class="most-popular">MOST POPULAR</span>
+        </label>
+        <div class="options">
+            <div>
+                <label for="size1">Size</label>
+                <select id="size1">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+            <div>
+                <label for="color1">Colour</label>
+                <select id="color1">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                </select>
+            </div>
+        </div>
+        <div class="options">
+            <div>
+                <label for="size2">Size</label>
+                <select id="size2">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+            </div>
+            <div>
+                <label for="color2">Colour</label>
+                <select id="color2">
+                    <option value="Black">Black</option>
+                    <option value="White">White</option>
+                </select>
+            </div>
+        </div>
+    </article>
+
+    <article class="offer-box">
+       <div class="div-left">
+        <input type="radio" name="unit" id="unit3" value="3" onclick="calculateTotal(3)">
+        <label for="unit3">
+            <span class="offer-title">3 Unit <span class="discount">30% Off</span></span>
+       </div>
+            <span class="price">$24.00 USD <del>$24.00 USD</del></span>
+        </label>
+    </article>
+
+    <footer>
+       
+        <div class="total-price"> <p>Free Delivery</p>  <span id="total-price"> Total : $ <span id="display-price">0.00</span> USD</span></div>
+        <button class="add-to-cart">+ Add to Cart</button>
+    </footer>
+    <p class="rights">@ Powered by Pumper </p>
+</section>
+       
+<script src="./script.js"></script>
+</body>
+</html>

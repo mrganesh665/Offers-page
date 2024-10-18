@@ -1,0 +1,175 @@
+:root {
+  --pink:  #FF6B82;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  color:var(--pink);
+  margin: 0;
+  position: relative;
+}
+
+h1::before {
+  margin-right: 5px;
+  content: "";
+  display: inline-block;
+  min-width: 15vw;
+  max-width: 30vw;
+  height: .1px;
+  background-color:#c5c4c4;
+  margin-bottom: 8px;
+}
+
+h1::after {
+  margin-left: 5px;
+  content: "";
+  display: inline-block;
+  min-width: 15vw;
+  max-width: 30vw;
+  height: .1px;
+  background-color:#c5c4c4;
+  margin-bottom: 8px;
+}
+
+.div-left{
+  display: flex;
+  align-items: center;
+}
+
+.offer-box {
+  border: 1px solid #b9b9b9;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  position: relative;
+}
+
+.offer-box:hover {
+  border-color: var(--pink);
+  background-color:#FFF9FA;
+  border: 2px #FF6B82 solid ;
+}
+
+.offer-title {
+  margin-left: 4px;
+  margin-top: 3px;
+  display: block;
+  font-weight: bold;
+}
+
+.discount {
+  margin-left: 4px;
+  padding: 0 4px;
+  background-color: var(--pink);
+  color: white;
+  border-radius: 2px;
+
+}
+
+.price {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 18px;
+  text-align: right;
+}
+
+.price del {
+  display: block;
+  color: #aaa;
+  font-size: 14px;
+}
+
+.most-popular {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color:var(--pink);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.options {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.options div {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.options div:last-child {
+  margin-right: 0;
+}
+
+.options select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #b9b9b9;
+  border-radius: 4px;
+}
+
+footer {
+  margin-left: 10px;
+  margin-top: 20px;
+}
+
+.total-price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 18px;
+  color: #333;
+}
+
+
+
+.add-to-cart {
+  width: 100%;
+  padding: .6rem .9rem;
+  background-color: var(--pink);
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-to-cart:hover {
+  background-color: #ff5a70;
+}
+
+.rights{
+  margin-top: 20px;
+  float: right;
+  font-style: italic;
+  color: #b9b9b9;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+}
